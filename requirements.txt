@@ -5,3 +5,4 @@ jina
 openai
 numpy
 logging
+python-dotenv

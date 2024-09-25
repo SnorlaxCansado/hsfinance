@@ -5,14 +5,19 @@ import json
 import os
 import pandas as pd
 
-def fetch_stock_data(ticker):
+VALID_PERIODS = ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
+
+def fetch_stock_data(ticker, period='1y'):
     """
     Fetches stock data for the given ticker using yfinance and saves it as a JSON file.
+    Parameters:
+        ticker (str): The stock ticker symbol.
+        period (str): The period over which to fetch stock data (e.g., '1y', '6mo', '1mo').
     """
     try:
         stock = yf.Ticker(ticker)
         stock_info = stock.info
-        stock_history = stock.history(period="1y")  # Fetch last 1 year of data
+        stock_history = stock.history(period=period)  # Use the passed period
         stock_history.reset_index(inplace=True)
 
         # Convert Timestamp columns to strings
@@ -43,5 +48,4 @@ def fetch_stock_data(ticker):
 
 if __name__ == '__main__':
     # Example usage
-    fetch_stock_data('AAPL')
-
+    fetch_stock_data('AAPL', period='1y')
