@@ -1,65 +1,45 @@
-Stock Analysis Report Generator
-Table of Contents
-Introduction
-Project Overview
-Features
-Folder Structure
-Installation
-Usage
-Modules
-data_processing.py
-gpt_logic.py
-jina_ai_module.py
-main.py
-report_generator.py
-serper_api.py
-yahoo_finance_api.py
-Requirements
-Contributing
-License
-Author
-Acknowledgments
-Introduction
-The Stock Analysis Report Generator is a comprehensive tool designed to generate detailed stock analysis reports for a user-selected ticker symbol. It integrates data from various APIs, including Yahoo Finance, SERPER (Web Search API), OpenAI's GPT models, and Jina AI Reader, to provide a holistic view of a stock's performance, relevant news, and contextual analysis.
+# Stock Analysis Report Generator
 
-Project Overview
-User Input:
+This project is a Stock Analysis Report Generator that combines various data sources to produce comprehensive reports for selected stock tickers. It leverages multiple APIs and AI tools to gather financial, geopolitical, and sector-specific news, creating insightful reports in both text and PDF formats.
 
-The user selects a stock ticker for analysis.
-Complementary Tickers and Theme Queries:
+## Project Overview
 
-The system uses OpenAI's GPT models to suggest complementary tickers and generate theme-based queries related to the selected ticker.
-Data Fetching:
+The main flow of the project is as follows:
 
-Yahoo Finance API: Fetches stock data (historical and current) for the selected ticker.
-SERPER API: Retrieves relevant news articles and context in the following categories:
-Stock Context
-Geopolitics
-Sector News
-Data Processing:
+1. **User Choose Ticker**
+   - The user selects a stock ticker for analysis.
 
-The JSON data from Yahoo Finance and SERPER is cleaned and combined.
-Relevant News Selection:
+2. **chatgpt-4o-mini**
+   - Assists in choosing complementary tickers for analysis and generates theme-based queries for the selected ticker.
 
-GPT analyzes the combined data to select the most relevant news articles.
-Full Content Retrieval:
+3. **Yahoo Finance (Stocks API)**
+   - Fetches historical stock data and presents it in a tabular format.
 
-Jina AI Reader: Fetches the full content of the selected news articles.
-Report Generation:
+4. **SERPER (Web Search API)**
+   - **Stock Context**: Fetches context-specific information related to the selected stock.
+   - **Geopolitics**: Fetches geopolitical context that may impact the stock.
+   - **Sector News**: Fetches news related to the specific sector of the selected stock.
 
-GPT uses the full news content and stock data to generate a comprehensive report, structured and formatted based on provided examples.
-Final Output:
+5. **Data Combination**
+   - JSON data from Yahoo Finance, SERPER (Stock Context, Geopolitics, Sector News) is combined for further analysis.
 
-The final report is saved in both .txt and .pdf formats.
-Features
-Automated Stock Analysis: Generates in-depth reports on stock performance, including technical and fundamental analysis.
-News Integration: Incorporates the most relevant news articles affecting the stock, including geopolitical and sector-specific news.
-AI-Powered Insights: Uses OpenAI's GPT models to provide analytical insights and summaries.
-Customizable: Users can specify the number of relevant articles and the period for stock history.
-PDF Report Generation: Creates professionally formatted PDF reports with charts and structured content.
-Folder Structure
-lua
-Copiar código
+6. **chatgpt-4o-mini**
+   - Analyzes the combined data and selects the most relevant news articles to send to JINA AI for full content extraction.
+
+7. **JINA AI**
+   - Retrieves the complete content of the selected news articles and sends it back to `chatgpt-oi-mini`.
+
+8. **chatgpt-oi-mini**
+   - Generates the final report using the complete news content and stock data fetched earlier. The report is structured and formatted based on provided examples.
+
+9. **Final Output**
+   - The output is a comprehensive report that combines stock data, news content, and analysis. The report is saved in both text and PDF formats.
+
+## Project Folder Structure
+
+The folder structure for this project is as follows:
+
+```
 ./
 |-- README.md
 |-- data/
@@ -76,141 +56,95 @@ Copiar código
     |-- serper_api.py
     |-- utils.py
     `-- yahoo_finance_api.py
-data/: Stores intermediate data files like JSON responses and article contents.
-notebooks/: Contains Jupyter notebooks (if any) for exploratory analysis.
-outputs/: Stores the final generated reports in .txt and .pdf formats.
-src/: Contains all the source code modules.
-Installation
-Prerequisites
-Python 3.7 or higher
-pip
-API keys for the following services:
-OpenAI API
-SERPER API
-Jina AI Reader API
-Steps
-Clone the Repository
+```
 
-bash
-Copiar código
-git clone https://github.com/yourusername/stock-analysis-report-generator.git
-cd stock-analysis-report-generator
-Create a Virtual Environment (Optional but Recommended)
+### Description of Important Files
 
-bash
-Copiar código
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install Required Packages
+- **`src/data_processing.py`**: Handles data cleaning, validation, and combination for further analysis.
+- **`src/gpt_logic.py`**: Interacts with GPT to generate complementary tickers and theme-specific queries.
+- **`src/jina_ai_module.py`**: Uses the Jina AI Reader API to fetch full article content.
+- **`src/main.py`**: Main orchestration script that runs the complete flow of the report generation.
+- **`src/report_generator.py`**: Uses GPT to generate the final report and ReportLab to create the PDF output.
+- **`src/serper_api.py`**: Fetches data from the SERPER API based on given queries.
+- **`src/yahoo_finance_api.py`**: Fetches stock data using the Yahoo Finance API.
+- **`requirements.txt`**: Lists the required packages and dependencies for the project.
 
-bash
-Copiar código
-pip install -r requirements.txt
-Set Up Environment Variables
+## Installation and Setup
 
-Create a .env file in the root directory and add your API keys:
+1. **Clone the Repository**
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-makefile
-Copiar código
-OPENAI_API_KEY=your_openai_api_key
-SERPER_API_KEY=your_serper_api_key
-JINA_READER_API_KEY=your_jina_ai_api_key
-Usage
-Run the main script with the desired stock ticker symbol:
+2. **Create a Virtual Environment**
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-bash
-Copiar código
-python src/main.py TICKER_SYMBOL
-Optional Arguments
---articles: Number of relevant articles to select (default is 5).
---period: Period for stock history (options: 1d, 5d, 1mo, 3mo, 6mo, 1y, etc.)
-Example:
+3. **Install Dependencies**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-bash
-Copiar código
-python src/main.py AAPL --articles 3 --period 6mo
-This command generates a stock analysis report for Apple Inc. (AAPL), selecting the top 3 relevant articles and using 6 months of historical stock data.
+4. **Environment Variables**
+   - Create a `.env` file in the root directory and add the following environment variables:
+     ```
+     OPENAI_API_KEY=<Your_OpenAI_API_Key>
+     SERPER_API_KEY=<Your_SERPER_API_Key>
+     JINA_READER_API_KEY=<Your_Jina_Reader_API_Key>
+     ```
 
-Modules
-data_processing.py
-Responsible for:
+## How to Use the Project
 
-Loading and validating JSON data.
-Cleaning stock data and SERPER data.
-Combining stock data with SERPER data.
-Selecting the most relevant news articles using GPT.
-gpt_logic.py
-Handles:
+1. **Run the Script**
+   Use the following command to run the main script:
+   ```sh
+   python src/main.py <ticker> --articles <number_of_articles> --period <stock_period>
+   ```
+   - `<ticker>`: Stock ticker symbol (e.g., `AAPL`).
+   - `--articles`: (Optional) Number of relevant articles to select. Default is `5`.
+   - `--period`: (Optional) Period for stock history (e.g., `1d`, `5d`, `1mo`, `1y`). Default is `1y`.
 
-Generating complementary tickers for comparison.
-Creating theme-specific queries for the SERPER API.
-jina_ai_module.py
-Manages:
+2. **Output**
+   - The report will be saved in the `outputs/` folder as both a `.txt` and `.pdf` file.
 
-Fetching the full text content of news articles using the Jina AI Reader API.
-Handling retries and failures, and blacklisting domains if necessary.
-main.py
-The orchestrator script that:
+## Features
 
-Parses command-line arguments.
-Fetches stock data and news articles.
-Processes and combines data.
-Selects relevant news articles.
-Fetches full article content.
-Generates the final report.
-report_generator.py
-Handles:
+- **Ticker Analysis**: Selects complementary tickers for comparative analysis.
+- **Data Collection**: Collects stock data from Yahoo Finance and relevant news articles using SERPER and Jina AI APIs.
+- **AI-Powered Insights**: Uses `chatgpt-oi-mini` to generate insights on recent performance, geopolitical impacts, and sector-specific context.
+- **Report Generation**: Generates a comprehensive report with an analysis of recent performance, stock context, geopolitical context, and sector news.
+- **PDF Output**: Creates a well-formatted PDF report with all relevant content.
 
-Parsing the full articles.
-Generating stock charts.
-Creating the report using GPT.
-Saving the report as a professionally formatted PDF.
-serper_api.py
-Responsible for:
+## Dependencies
 
-Fetching data from the SERPER API based on provided queries.
-Saving the fetched data as JSON files.
-yahoo_finance_api.py
-Manages:
+- `requests`
+- `yfinance`
+- `pandas`
+- `jina`
+- `openai`
+- `numpy`
+- `logging`
+- `python-dotenv`
+- `fpdf2`
+- `reportlab`
+- `matplotlib`
 
-Fetching stock data (both info and historical data) from Yahoo Finance.
-Saving the fetched data as JSON files.
-Requirements
-The project dependencies are listed in requirements.txt:
+All dependencies can be installed using `pip install -r requirements.txt`.
 
-requests
-yfinance
-pandas
-jina
-openai
-numpy
-logging
-python-dotenv
-fpdf2
-reportlab
-matplotlib
-Install them using:
+## Notes
 
-bash
-Copiar código
-pip install -r requirements.txt
-Contributing
-Contributions are welcome! Please follow these steps:
+- Ensure you have valid API keys for OpenAI, SERPER, and Jina AI to use this project effectively.
+- This project makes heavy use of OpenAI's GPT for generating complementary tickers, theme queries, and generating the final report.
+- SERPER and Jina AI are used to gather and process news articles related to the selected ticker.
 
-Fork the repository.
-Create a new branch: git checkout -b feature/YourFeature.
-Commit your changes: git commit -am 'Add some feature'.
-Push to the branch: git push origin feature/YourFeature.
-Submit a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
 
-Author
-Gabriel T. H. S. Santos
-Acknowledgments
-OpenAI GPT Models: For providing the language generation capabilities.
-Yahoo Finance API: For stock data.
-SERPER API: For web search results.
-Jina AI Reader: For fetching full article contents.
-ReportLab: For generating PDF reports.
-Matplotlib: For creating stock charts.
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+
+For any questions or suggestions, feel free to contact me at: **Gabriel T. H. S. Santos**.
+
