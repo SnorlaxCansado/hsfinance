@@ -6,3 +6,6 @@ openai
 numpy
 logging
 python-dotenv
+fpdf2
+reportlab
+matplotlib

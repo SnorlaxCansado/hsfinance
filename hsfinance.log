@@ -1,0 +1,395 @@
+2024-10-08 17:09:42,226 - INFO - Fetching stock data for AAPL...
+2024-10-08 17:09:43,846 - INFO - Stock data for AAPL has been saved to data/AAPL_stock_data.json.
+2024-10-08 17:09:43,846 - INFO - Generating complementary tickers for AAPL...
+2024-10-08 17:09:44,617 - INFO - Complementary tickers for AAPL: ['MSFT', 'GOOGL', 'AMZN']
+2024-10-08 17:09:44,617 - INFO - Generating theme-specific queries for AAPL...
+2024-10-08 17:09:44,618 - INFO - Theme-specific queries for AAPL: ['AAPL financial performance', 'AAPL market trends', 'AAPL geopolitical risks', 'AAPL sector developments']
+2024-10-08 17:09:44,618 - INFO - Fetching data from SERPER API...
+2024-10-08 17:09:44,618 - INFO - Fetching data for query: AAPL stock analysis
+2024-10-08 17:09:45,750 - INFO - Data for 'AAPL stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-08 17:09:45,750 - INFO - Fetching data for query: Geopolitical events affecting AAPL
+2024-10-08 17:09:46,718 - INFO - Data for 'Geopolitical events affecting AAPL' has been saved to data/serper_geopolitics.json.
+2024-10-08 17:09:46,719 - INFO - Fetching data for query: AAPL sector news
+2024-10-08 17:09:47,530 - INFO - Data for 'AAPL sector news' has been saved to data/serper_sector_news.json.
+2024-10-08 17:09:47,531 - INFO - Fetching data for query: AAPL financial performance
+2024-10-08 17:09:48,413 - INFO - Data for 'AAPL financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-08 17:09:48,414 - INFO - Fetching data for query: AAPL market trends
+2024-10-08 17:09:49,294 - INFO - Data for 'AAPL market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-08 17:09:49,295 - INFO - Fetching data for query: AAPL geopolitical risks
+2024-10-08 17:09:50,632 - INFO - Data for 'AAPL geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-08 17:09:50,632 - INFO - Fetching data for query: AAPL sector developments
+2024-10-08 17:09:51,540 - INFO - Data for 'AAPL sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-08 17:09:51,540 - INFO - Processing data...
+2024-10-08 17:09:51,542 - INFO - Loaded data from data/AAPL_stock_data.json.
+2024-10-08 17:09:51,615 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-08 17:09:51,615 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-08 17:09:51,615 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-08 17:09:51,616 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-08 17:09:51,616 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-08 17:09:51,616 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-08 17:09:51,617 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-08 17:09:51,622 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-08 17:09:51,622 - INFO - Selecting top 5 relevant news articles...
+2024-10-08 17:09:52,201 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-08 17:09:52,201 - INFO - Fetching full article content...
+2024-10-08 17:10:25,635 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-08 17:10:25,636 - INFO - Successfully fetched 5 articles.
+2024-10-08 17:10:25,636 - INFO - Final number of articles selected: 5
+2024-10-08 17:10:25,637 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-08 17:10:25,638 - INFO - Generating the final report...
+2024-10-08 17:10:34,862 - INFO - Final report has been saved to outputs/AAPL_final_report.txt.
+2024-10-08 17:11:35,863 - INFO - Fetching stock data for JBSS3.SA...
+2024-10-08 17:11:37,017 - INFO - Stock data for JBSS3.SA has been saved to data/JBSS3.SA_stock_data.json.
+2024-10-08 17:11:37,017 - INFO - Generating complementary tickers for JBSS3.SA...
+2024-10-08 17:11:37,728 - INFO - Complementary tickers for JBSS3.SA: ['SA']
+2024-10-08 17:11:37,729 - INFO - Generating theme-specific queries for JBSS3.SA...
+2024-10-08 17:11:37,729 - INFO - Theme-specific queries for JBSS3.SA: ['JBSS3.SA financial performance', 'JBSS3.SA market trends', 'JBSS3.SA geopolitical risks', 'JBSS3.SA sector developments']
+2024-10-08 17:11:37,729 - INFO - Fetching data from SERPER API...
+2024-10-08 17:11:37,729 - INFO - Fetching data for query: JBSS3.SA stock analysis
+2024-10-08 17:11:38,392 - INFO - Data for 'JBSS3.SA stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-08 17:11:38,393 - INFO - Fetching data for query: Geopolitical events affecting JBSS3.SA
+2024-10-08 17:11:39,541 - INFO - Data for 'Geopolitical events affecting JBSS3.SA' has been saved to data/serper_geopolitics.json.
+2024-10-08 17:11:39,542 - INFO - Fetching data for query: JBSS3.SA sector news
+2024-10-08 17:11:40,327 - INFO - Data for 'JBSS3.SA sector news' has been saved to data/serper_sector_news.json.
+2024-10-08 17:11:40,327 - INFO - Fetching data for query: JBSS3.SA financial performance
+2024-10-08 17:11:41,347 - INFO - Data for 'JBSS3.SA financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-08 17:11:41,348 - INFO - Fetching data for query: JBSS3.SA market trends
+2024-10-08 17:11:42,266 - INFO - Data for 'JBSS3.SA market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-08 17:11:42,267 - INFO - Fetching data for query: JBSS3.SA geopolitical risks
+2024-10-08 17:11:42,941 - INFO - Data for 'JBSS3.SA geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-08 17:11:42,942 - INFO - Fetching data for query: JBSS3.SA sector developments
+2024-10-08 17:11:43,815 - INFO - Data for 'JBSS3.SA sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-08 17:11:43,815 - INFO - Processing data...
+2024-10-08 17:11:43,816 - INFO - Loaded data from data/JBSS3.SA_stock_data.json.
+2024-10-08 17:11:43,830 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-08 17:11:43,830 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-08 17:11:43,831 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-08 17:11:43,831 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-08 17:11:43,831 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-08 17:11:43,832 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-08 17:11:43,832 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-08 17:11:43,837 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-08 17:11:43,837 - INFO - Selecting top 5 relevant news articles...
+2024-10-08 17:11:44,377 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-08 17:11:44,378 - INFO - Fetching full article content...
+2024-10-08 17:12:06,945 - WARNING - No content returned for URL https://www.reuters.com/business/environment/environmental-activists-pressure-us-regulators-halt-jbs-listing-2023-08-23/.
+2024-10-08 17:12:20,027 - WARNING - No content returned for URL https://www.reuters.com/markets/companies/JBSS3.SA/.
+2024-10-08 17:12:30,423 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-08 17:12:30,423 - INFO - Successfully fetched 5 articles.
+2024-10-08 17:12:30,424 - INFO - Final number of articles selected: 5
+2024-10-08 17:12:30,424 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-08 17:12:30,425 - INFO - Generating the final report...
+2024-10-08 17:12:39,624 - INFO - Final report has been saved to outputs/JBSS3.SA_final_report.txt.
+2024-10-08 17:33:24,177 - INFO - Fetching stock data for JBSS3.SA...
+2024-10-08 17:33:26,095 - INFO - Stock data for JBSS3.SA has been saved to data/JBSS3.SA_stock_data.json.
+2024-10-08 17:33:26,095 - INFO - Generating complementary tickers for JBSS3.SA...
+2024-10-08 17:33:26,868 - INFO - Complementary tickers for JBSS3.SA: ['SA']
+2024-10-08 17:33:26,868 - INFO - Generating theme-specific queries for JBSS3.SA...
+2024-10-08 17:33:26,868 - INFO - Theme-specific queries for JBSS3.SA: ['JBSS3.SA financial performance', 'JBSS3.SA market trends', 'JBSS3.SA geopolitical risks', 'JBSS3.SA sector developments']
+2024-10-08 17:33:26,868 - INFO - Fetching data from SERPER API...
+2024-10-08 17:33:26,868 - INFO - Fetching data for query: JBSS3.SA stock analysis
+2024-10-08 17:33:27,868 - INFO - Data for 'JBSS3.SA stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-08 17:33:27,869 - INFO - Fetching data for query: Geopolitical events affecting JBSS3.SA
+2024-10-08 17:33:29,007 - INFO - Data for 'Geopolitical events affecting JBSS3.SA' has been saved to data/serper_geopolitics.json.
+2024-10-08 17:33:29,007 - INFO - Fetching data for query: JBSS3.SA sector news
+2024-10-08 17:33:29,785 - INFO - Data for 'JBSS3.SA sector news' has been saved to data/serper_sector_news.json.
+2024-10-08 17:33:29,785 - INFO - Fetching data for query: JBSS3.SA financial performance
+2024-10-08 17:33:30,566 - INFO - Data for 'JBSS3.SA financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-08 17:33:30,567 - INFO - Fetching data for query: JBSS3.SA market trends
+2024-10-08 17:33:31,899 - INFO - Data for 'JBSS3.SA market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-08 17:33:31,899 - INFO - Fetching data for query: JBSS3.SA geopolitical risks
+2024-10-08 17:33:32,629 - INFO - Data for 'JBSS3.SA geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-08 17:33:32,630 - INFO - Fetching data for query: JBSS3.SA sector developments
+2024-10-08 17:33:33,385 - INFO - Data for 'JBSS3.SA sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-08 17:33:33,386 - INFO - Processing data...
+2024-10-08 17:33:33,386 - INFO - Loaded data from data/JBSS3.SA_stock_data.json.
+2024-10-08 17:33:33,532 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-08 17:33:33,532 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-08 17:33:33,533 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-08 17:33:33,533 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-08 17:33:33,533 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-08 17:33:33,534 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-08 17:33:33,534 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-08 17:33:33,614 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-08 17:33:33,615 - INFO - Selecting top 5 relevant news articles...
+2024-10-08 17:33:34,135 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-08 17:33:34,135 - INFO - Fetching full article content...
+2024-10-08 17:33:41,937 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-08 17:33:41,938 - INFO - Successfully fetched 5 articles.
+2024-10-08 17:33:41,939 - INFO - Final number of articles selected: 5
+2024-10-08 17:33:41,940 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-08 17:33:41,940 - INFO - Generating the final report...
+2024-10-08 17:33:54,684 - INFO - Final report has been saved to outputs/JBSS3.SA_final_report.txt.
+2024-10-10 17:11:23,866 - INFO - Fetching stock data for JBSS3.SA...
+2024-10-10 17:11:26,719 - INFO - Stock data for JBSS3.SA has been saved to data/JBSS3.SA_stock_data.json.
+2024-10-10 17:11:26,720 - INFO - Generating complementary tickers for JBSS3.SA...
+2024-10-10 17:11:27,911 - INFO - Complementary tickers for JBSS3.SA: ['SA']
+2024-10-10 17:11:27,911 - INFO - Generating theme-specific queries for JBSS3.SA...
+2024-10-10 17:11:27,911 - INFO - Theme-specific queries for JBSS3.SA: ['JBSS3.SA financial performance', 'JBSS3.SA market trends', 'JBSS3.SA geopolitical risks', 'JBSS3.SA sector developments']
+2024-10-10 17:11:27,911 - INFO - Fetching data from SERPER API...
+2024-10-10 17:11:27,911 - INFO - Fetching data for query: JBSS3.SA stock analysis
+2024-10-10 17:11:29,325 - INFO - Data for 'JBSS3.SA stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-10 17:11:29,326 - INFO - Fetching data for query: Geopolitical events affecting JBSS3.SA
+2024-10-10 17:11:30,065 - INFO - Data for 'Geopolitical events affecting JBSS3.SA' has been saved to data/serper_geopolitics.json.
+2024-10-10 17:11:30,066 - INFO - Fetching data for query: JBSS3.SA sector news
+2024-10-10 17:11:31,424 - INFO - Data for 'JBSS3.SA sector news' has been saved to data/serper_sector_news.json.
+2024-10-10 17:11:31,424 - INFO - Fetching data for query: JBSS3.SA financial performance
+2024-10-10 17:11:32,456 - INFO - Data for 'JBSS3.SA financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-10 17:11:32,457 - INFO - Fetching data for query: JBSS3.SA market trends
+2024-10-10 17:11:33,239 - INFO - Data for 'JBSS3.SA market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-10 17:11:33,240 - INFO - Fetching data for query: JBSS3.SA geopolitical risks
+2024-10-10 17:11:34,115 - INFO - Data for 'JBSS3.SA geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-10 17:11:34,116 - INFO - Fetching data for query: JBSS3.SA sector developments
+2024-10-10 17:11:35,002 - INFO - Data for 'JBSS3.SA sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-10 17:11:35,003 - INFO - Processing data...
+2024-10-10 17:11:35,004 - INFO - Loaded data from data/JBSS3.SA_stock_data.json.
+2024-10-10 17:11:35,102 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-10 17:11:35,102 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-10 17:11:35,103 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-10 17:11:35,103 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-10 17:11:35,103 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-10 17:11:35,104 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-10 17:11:35,104 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-10 17:11:35,109 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-10 17:11:35,109 - INFO - Selecting top 5 relevant news articles...
+2024-10-10 17:11:35,594 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-10 17:11:35,594 - INFO - Fetching full article content...
+2024-10-10 17:11:42,419 - WARNING - No content returned for URL https://finance.yahoo.com/quote/JBSS3.SA/.
+2024-10-10 17:12:02,733 - WARNING - No content returned for URL https://www.reuters.com/business/environment/environmental-activists-pressure-us-regulators-halt-jbs-listing-2023-08-23/.
+2024-10-10 17:12:19,336 - WARNING - No content returned for URL https://www.reuters.com/markets/companies/JBSS3.SA/.
+2024-10-10 17:12:34,958 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-10 17:12:34,959 - INFO - Successfully fetched 5 articles.
+2024-10-10 17:12:34,959 - INFO - Final number of articles selected: 5
+2024-10-10 17:12:34,962 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-10 17:12:34,962 - INFO - Generating the final report...
+2024-10-10 17:12:47,104 - INFO - Final report has been saved to outputs/JBSS3.SA_final_report.txt.
+2024-10-10 17:12:47,158 - INFO - Report has been saved as PDF to outputs/JBSS3.SA_final_report.pdf.
+2024-10-11 11:12:15,910 - INFO - Fetching stock data for AAPL...
+2024-10-11 11:12:17,737 - INFO - Stock data for AAPL has been saved to data/AAPL_stock_data.json.
+2024-10-11 11:12:17,738 - INFO - Generating complementary tickers for AAPL...
+2024-10-11 11:12:19,018 - INFO - Complementary tickers for AAPL: ['MSFT', 'GOOGL', 'AMZN']
+2024-10-11 11:12:19,019 - INFO - Generating theme-specific queries for AAPL...
+2024-10-11 11:12:19,019 - INFO - Theme-specific queries for AAPL: ['AAPL financial performance', 'AAPL market trends', 'AAPL geopolitical risks', 'AAPL sector developments']
+2024-10-11 11:12:19,019 - INFO - Fetching data from SERPER API...
+2024-10-11 11:12:19,019 - INFO - Fetching data for query: AAPL stock analysis
+2024-10-11 11:12:20,538 - INFO - Data for 'AAPL stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-11 11:12:20,539 - INFO - Fetching data for query: Geopolitical events affecting AAPL
+2024-10-11 11:12:21,655 - INFO - Data for 'Geopolitical events affecting AAPL' has been saved to data/serper_geopolitics.json.
+2024-10-11 11:12:21,655 - INFO - Fetching data for query: AAPL sector news
+2024-10-11 11:12:22,427 - INFO - Data for 'AAPL sector news' has been saved to data/serper_sector_news.json.
+2024-10-11 11:12:22,427 - INFO - Fetching data for query: AAPL financial performance
+2024-10-11 11:12:23,366 - INFO - Data for 'AAPL financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-11 11:12:23,367 - INFO - Fetching data for query: AAPL market trends
+2024-10-11 11:12:24,270 - INFO - Data for 'AAPL market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-11 11:12:24,270 - INFO - Fetching data for query: AAPL geopolitical risks
+2024-10-11 11:12:25,253 - INFO - Data for 'AAPL geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-11 11:12:25,254 - INFO - Fetching data for query: AAPL sector developments
+2024-10-11 11:12:26,197 - INFO - Data for 'AAPL sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-11 11:12:26,197 - INFO - Processing data...
+2024-10-11 11:12:26,199 - INFO - Loaded data from data/AAPL_stock_data.json.
+2024-10-11 11:12:26,288 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-11 11:12:26,288 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-11 11:12:26,289 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-11 11:12:26,289 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-11 11:12:26,289 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-11 11:12:26,290 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-11 11:12:26,290 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-11 11:12:26,295 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-11 11:12:26,295 - INFO - Selecting top 5 relevant news articles...
+2024-10-11 11:12:26,805 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-11 11:12:26,806 - INFO - Fetching full article content...
+2024-10-11 11:13:01,567 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-11 11:13:01,567 - INFO - Successfully fetched 5 articles.
+2024-10-11 11:13:01,568 - INFO - Final number of articles selected: 5
+2024-10-11 11:13:01,569 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-11 11:13:01,569 - INFO - Generating the final report...
+2024-10-11 11:13:14,255 - ERROR - An error occurred while saving the report as PDF: name 'current_price' is not defined
+2024-10-11 11:13:14,256 - INFO - Final report has been saved to outputs/AAPL_final_report.txt.
+2024-10-11 11:13:14,256 - ERROR - An unexpected error occurred: save_report_as_pdf() missing 1 required positional argument: 'stock_data'
+Traceback (most recent call last):
+  File "/root/hsfinance/src/main.py", line 424, in <module>
+    main()
+  File "/root/hsfinance/src/main.py", line 413, in main
+    save_report_as_pdf(report, pdf_file_path)
+TypeError: save_report_as_pdf() missing 1 required positional argument: 'stock_data'
+2024-10-14 13:29:11,379 - INFO - Fetching stock data for AAPL...
+2024-10-14 13:29:14,138 - INFO - Stock data for AAPL has been saved to data/AAPL_stock_data.json.
+2024-10-14 13:29:14,138 - INFO - Generating complementary tickers for AAPL...
+2024-10-14 13:29:15,874 - INFO - Complementary tickers for AAPL: ['MSFT', 'GOOGL', 'AMZN']
+2024-10-14 13:29:15,874 - INFO - Generating theme-specific queries for AAPL...
+2024-10-14 13:29:15,874 - INFO - Theme-specific queries for AAPL: ['AAPL financial performance', 'AAPL market trends', 'AAPL geopolitical risks', 'AAPL sector developments']
+2024-10-14 13:29:15,874 - INFO - Fetching data from SERPER API...
+2024-10-14 13:29:15,874 - INFO - Fetching data for query: AAPL stock analysis
+2024-10-14 13:29:17,008 - INFO - Data for 'AAPL stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-14 13:29:17,009 - INFO - Fetching data for query: Geopolitical events affecting AAPL
+2024-10-14 13:29:18,045 - INFO - Data for 'Geopolitical events affecting AAPL' has been saved to data/serper_geopolitics.json.
+2024-10-14 13:29:18,046 - INFO - Fetching data for query: AAPL sector news
+2024-10-14 13:29:19,061 - INFO - Data for 'AAPL sector news' has been saved to data/serper_sector_news.json.
+2024-10-14 13:29:19,061 - INFO - Fetching data for query: AAPL financial performance
+2024-10-14 13:29:20,019 - INFO - Data for 'AAPL financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-14 13:29:20,020 - INFO - Fetching data for query: AAPL market trends
+2024-10-14 13:29:20,773 - INFO - Data for 'AAPL market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-14 13:29:20,774 - INFO - Fetching data for query: AAPL geopolitical risks
+2024-10-14 13:29:22,359 - INFO - Data for 'AAPL geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-14 13:29:22,360 - INFO - Fetching data for query: AAPL sector developments
+2024-10-14 13:29:23,273 - INFO - Data for 'AAPL sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-14 13:29:23,273 - INFO - Processing data...
+2024-10-14 13:29:23,274 - INFO - Loaded data from data/AAPL_stock_data.json.
+2024-10-14 13:29:23,354 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-14 13:29:23,355 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-14 13:29:23,355 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-14 13:29:23,355 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-14 13:29:23,355 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-14 13:29:23,356 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-14 13:29:23,356 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-14 13:29:23,362 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-14 13:29:23,362 - INFO - Selecting top 5 relevant news articles...
+2024-10-14 13:29:24,313 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-14 13:29:24,313 - INFO - Fetching full article content...
+2024-10-14 13:29:37,010 - WARNING - No content returned for URL https://finance.yahoo.com/quote/AAPL/.
+2024-10-14 13:29:48,882 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-14 13:29:48,883 - INFO - Successfully fetched 5 articles.
+2024-10-14 13:29:48,883 - INFO - Final number of articles selected: 5
+2024-10-14 13:29:48,885 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-14 13:29:48,885 - INFO - Generating the final report...
+2024-10-14 13:30:03,505 - INFO - Report has been saved as PDF to outputs/AAPL_final_report.pdf.
+2024-10-14 13:30:03,506 - INFO - Final report has been saved to outputs/AAPL_final_report.txt.
+2024-10-14 13:30:03,506 - ERROR - An unexpected error occurred: save_report_as_pdf() missing 3 required positional arguments: 'stock_data', 'long_name', and 'author_name'
+Traceback (most recent call last):
+  File "/root/hsfinance/src/main.py", line 425, in <module>
+    main()
+  File "/root/hsfinance/src/main.py", line 414, in main
+    save_report_as_pdf(report, pdf_file_path)
+TypeError: save_report_as_pdf() missing 3 required positional arguments: 'stock_data', 'long_name', and 'author_name'
+2024-10-14 14:09:21,848 - INFO - Fetching stock data for AAPL...
+2024-10-14 14:09:23,139 - INFO - Stock data for AAPL has been saved to data/AAPL_stock_data.json.
+2024-10-14 14:09:23,139 - INFO - Generating complementary tickers for AAPL...
+2024-10-14 14:09:23,731 - INFO - Complementary tickers for AAPL: ['MSFT', 'GOOGL', 'AMZN']
+2024-10-14 14:09:23,731 - INFO - Generating theme-specific queries for AAPL...
+2024-10-14 14:09:23,731 - INFO - Theme-specific queries for AAPL: ['AAPL financial performance', 'AAPL market trends', 'AAPL geopolitical risks', 'AAPL sector developments']
+2024-10-14 14:09:23,731 - INFO - Fetching data from SERPER API...
+2024-10-14 14:09:23,731 - INFO - Fetching data for query: AAPL stock analysis
+2024-10-14 14:09:24,825 - INFO - Data for 'AAPL stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-14 14:09:24,826 - INFO - Fetching data for query: Geopolitical events affecting AAPL
+2024-10-14 14:09:25,928 - INFO - Data for 'Geopolitical events affecting AAPL' has been saved to data/serper_geopolitics.json.
+2024-10-14 14:09:25,928 - INFO - Fetching data for query: AAPL sector news
+2024-10-14 14:09:26,697 - INFO - Data for 'AAPL sector news' has been saved to data/serper_sector_news.json.
+2024-10-14 14:09:26,698 - INFO - Fetching data for query: AAPL financial performance
+2024-10-14 14:09:27,575 - INFO - Data for 'AAPL financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-14 14:09:27,576 - INFO - Fetching data for query: AAPL market trends
+2024-10-14 14:09:28,509 - INFO - Data for 'AAPL market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-14 14:09:28,510 - INFO - Fetching data for query: AAPL geopolitical risks
+2024-10-14 14:09:29,512 - INFO - Data for 'AAPL geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-14 14:09:29,512 - INFO - Fetching data for query: AAPL sector developments
+2024-10-14 14:09:30,371 - INFO - Data for 'AAPL sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-14 14:09:30,371 - INFO - Processing data...
+2024-10-14 14:09:30,373 - INFO - Loaded data from data/AAPL_stock_data.json.
+2024-10-14 14:09:30,384 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-14 14:09:30,385 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-14 14:09:30,385 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-14 14:09:30,385 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-14 14:09:30,386 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-14 14:09:30,386 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-14 14:09:30,386 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-14 14:09:30,392 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-14 14:09:30,392 - INFO - Selecting top 5 relevant news articles...
+2024-10-14 14:09:31,114 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-14 14:09:31,114 - INFO - Fetching full article content...
+2024-10-14 14:09:36,029 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-14 14:09:36,030 - INFO - Successfully fetched 5 articles.
+2024-10-14 14:09:36,030 - INFO - Final number of articles selected: 5
+2024-10-14 14:09:36,032 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-14 14:09:36,032 - INFO - Generating the final report...
+2024-10-14 14:09:47,660 - INFO - Report has been saved as PDF to outputs/AAPL_final_report.pdf.
+2024-10-14 14:09:47,661 - INFO - Final report has been saved to outputs/AAPL_final_report.txt.
+2024-10-14 14:09:47,661 - ERROR - An unexpected error occurred: save_report_as_pdf() missing 3 required positional arguments: 'stock_data', 'long_name', and 'author_name'
+Traceback (most recent call last):
+  File "/root/hsfinance/src/main.py", line 424, in <module>
+    main()
+  File "/root/hsfinance/src/main.py", line 413, in main
+    save_report_as_pdf(report, pdf_file_path)
+TypeError: save_report_as_pdf() missing 3 required positional arguments: 'stock_data', 'long_name', and 'author_name'
+2024-10-14 16:01:57,322 - INFO - Fetching stock data for JBSS3.SA...
+2024-10-14 16:01:58,731 - INFO - Stock data for JBSS3.SA has been saved to data/JBSS3.SA_stock_data.json.
+2024-10-14 16:01:58,732 - INFO - Generating complementary tickers for JBSS3.SA...
+2024-10-14 16:01:59,411 - INFO - Complementary tickers for JBSS3.SA: ['SA']
+2024-10-14 16:01:59,411 - INFO - Generating theme-specific queries for JBSS3.SA...
+2024-10-14 16:01:59,412 - INFO - Theme-specific queries for JBSS3.SA: ['JBSS3.SA financial performance', 'JBSS3.SA market trends', 'JBSS3.SA geopolitical risks', 'JBSS3.SA sector developments']
+2024-10-14 16:01:59,412 - INFO - Fetching data from SERPER API...
+2024-10-14 16:01:59,412 - INFO - Fetching data for query: JBSS3.SA stock analysis
+2024-10-14 16:02:00,565 - INFO - Data for 'JBSS3.SA stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-14 16:02:00,566 - INFO - Fetching data for query: Geopolitical events affecting JBSS3.SA
+2024-10-14 16:02:01,415 - INFO - Data for 'Geopolitical events affecting JBSS3.SA' has been saved to data/serper_geopolitics.json.
+2024-10-14 16:02:01,415 - INFO - Fetching data for query: JBSS3.SA sector news
+2024-10-14 16:02:02,292 - INFO - Data for 'JBSS3.SA sector news' has been saved to data/serper_sector_news.json.
+2024-10-14 16:02:02,292 - INFO - Fetching data for query: JBSS3.SA financial performance
+2024-10-14 16:02:03,019 - INFO - Data for 'JBSS3.SA financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-14 16:02:03,020 - INFO - Fetching data for query: JBSS3.SA market trends
+2024-10-14 16:02:03,965 - INFO - Data for 'JBSS3.SA market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-14 16:02:03,965 - INFO - Fetching data for query: JBSS3.SA geopolitical risks
+2024-10-14 16:02:04,696 - INFO - Data for 'JBSS3.SA geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-14 16:02:04,697 - INFO - Fetching data for query: JBSS3.SA sector developments
+2024-10-14 16:02:05,759 - INFO - Data for 'JBSS3.SA sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-14 16:02:05,760 - INFO - Processing data...
+2024-10-14 16:02:05,761 - INFO - Loaded data from data/JBSS3.SA_stock_data.json.
+2024-10-14 16:02:05,779 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-14 16:02:05,780 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-14 16:02:05,780 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-14 16:02:05,780 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-14 16:02:05,780 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-14 16:02:05,781 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-14 16:02:05,781 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-14 16:02:05,785 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-14 16:02:05,786 - INFO - Selecting top 5 relevant news articles...
+2024-10-14 16:02:06,647 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-14 16:02:06,647 - INFO - Fetching full article content...
+2024-10-14 16:02:25,664 - WARNING - No content returned for URL https://www.reuters.com/business/environment/environmental-activists-pressure-us-regulators-halt-jbs-listing-2023-08-23/.
+2024-10-14 16:02:40,454 - WARNING - No content returned for URL https://www.reuters.com/markets/companies/JBSS3.SA/.
+2024-10-14 16:02:46,701 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-14 16:02:46,701 - INFO - Successfully fetched 5 articles.
+2024-10-14 16:02:46,702 - INFO - Final number of articles selected: 5
+2024-10-14 16:02:46,704 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-14 16:02:46,704 - INFO - Generating the final report...
+2024-10-14 16:02:58,828 - INFO - Report has been saved as PDF to outputs/JBSS3.SA_final_report.pdf.
+2024-10-14 16:02:58,829 - INFO - Final report has been saved to outputs/JBSS3.SA_final_report.txt.
+2024-10-14 16:07:57,716 - INFO - Fetching stock data for JBSS3.SA...
+2024-10-14 16:07:59,037 - INFO - Stock data for JBSS3.SA has been saved to data/JBSS3.SA_stock_data.json.
+2024-10-14 16:07:59,038 - INFO - Generating complementary tickers for JBSS3.SA...
+2024-10-14 16:08:00,060 - INFO - Complementary tickers for JBSS3.SA: ['SA']
+2024-10-14 16:08:00,061 - INFO - Generating theme-specific queries for JBSS3.SA...
+2024-10-14 16:08:00,061 - INFO - Theme-specific queries for JBSS3.SA: ['JBSS3.SA financial performance', 'JBSS3.SA market trends', 'JBSS3.SA geopolitical risks', 'JBSS3.SA sector developments']
+2024-10-14 16:08:00,061 - INFO - Fetching data from SERPER API...
+2024-10-14 16:08:00,061 - INFO - Fetching data for query: JBSS3.SA stock analysis
+2024-10-14 16:08:01,573 - INFO - Data for 'JBSS3.SA stock analysis' has been saved to data/serper_stock_context.json.
+2024-10-14 16:08:01,574 - INFO - Fetching data for query: Geopolitical events affecting JBSS3.SA
+2024-10-14 16:08:02,319 - INFO - Data for 'Geopolitical events affecting JBSS3.SA' has been saved to data/serper_geopolitics.json.
+2024-10-14 16:08:02,320 - INFO - Fetching data for query: JBSS3.SA sector news
+2024-10-14 16:08:02,981 - INFO - Data for 'JBSS3.SA sector news' has been saved to data/serper_sector_news.json.
+2024-10-14 16:08:02,981 - INFO - Fetching data for query: JBSS3.SA financial performance
+2024-10-14 16:08:03,967 - INFO - Data for 'JBSS3.SA financial performance' has been saved to data/serper_theme_query_0.json.
+2024-10-14 16:08:03,968 - INFO - Fetching data for query: JBSS3.SA market trends
+2024-10-14 16:08:04,794 - INFO - Data for 'JBSS3.SA market trends' has been saved to data/serper_theme_query_1.json.
+2024-10-14 16:08:04,794 - INFO - Fetching data for query: JBSS3.SA geopolitical risks
+2024-10-14 16:08:06,550 - INFO - Data for 'JBSS3.SA geopolitical risks' has been saved to data/serper_theme_query_2.json.
+2024-10-14 16:08:06,551 - INFO - Fetching data for query: JBSS3.SA sector developments
+2024-10-14 16:08:07,478 - INFO - Data for 'JBSS3.SA sector developments' has been saved to data/serper_theme_query_3.json.
+2024-10-14 16:08:07,478 - INFO - Processing data...
+2024-10-14 16:08:07,479 - INFO - Loaded data from data/JBSS3.SA_stock_data.json.
+2024-10-14 16:08:07,494 - INFO - Loaded data from data/serper_stock_context.json.
+2024-10-14 16:08:07,495 - INFO - Loaded data from data/serper_geopolitics.json.
+2024-10-14 16:08:07,495 - INFO - Loaded data from data/serper_sector_news.json.
+2024-10-14 16:08:07,495 - INFO - Loaded data from data/serper_theme_query_0.json.
+2024-10-14 16:08:07,495 - INFO - Loaded data from data/serper_theme_query_1.json.
+2024-10-14 16:08:07,496 - INFO - Loaded data from data/serper_theme_query_2.json.
+2024-10-14 16:08:07,496 - INFO - Loaded data from data/serper_theme_query_3.json.
+2024-10-14 16:08:07,500 - INFO - Combined data has been saved to data/combined_data.json.
+2024-10-14 16:08:07,501 - INFO - Selecting top 5 relevant news articles...
+2024-10-14 16:08:08,005 - INFO - Relevant articles have been saved to data/relevant_articles.json.
+2024-10-14 16:08:08,006 - INFO - Fetching full article content...
+2024-10-14 16:08:16,736 - INFO - Full articles have been saved to data/full_articles.txt.
+2024-10-14 16:08:16,736 - INFO - Successfully fetched 5 articles.
+2024-10-14 16:08:16,737 - INFO - Final number of articles selected: 5
+2024-10-14 16:08:16,739 - INFO - Final full articles have been saved to data/full_articles.txt.
+2024-10-14 16:08:16,739 - INFO - Generating the final report...
+2024-10-14 16:08:29,056 - INFO - Report has been saved as PDF to outputs/JBSS3.SA_final_report.pdf.
+2024-10-14 16:08:29,056 - INFO - Final report has been saved to outputs/JBSS3.SA_final_report.txt.

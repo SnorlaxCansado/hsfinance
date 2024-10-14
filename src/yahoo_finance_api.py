@@ -4,6 +4,7 @@ import yfinance as yf
 import json
 import os
 import pandas as pd
+import logging
 
 VALID_PERIODS = ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 
@@ -17,7 +18,14 @@ def fetch_stock_data(ticker, period='1y'):
     try:
         stock = yf.Ticker(ticker)
         stock_info = stock.info
-        stock_history = stock.history(period=period)  # Use the passed period
+        if not stock_info:
+            raise ValueError(f"No stock info available for {ticker}.")
+
+        stock_history = stock.history(period=period)
+        if stock_history.empty:
+            logging.warning(f"No historical data available for {ticker} over period '{period}'.")
+            return None
+
         stock_history.reset_index(inplace=True)
 
         # Convert Timestamp columns to strings
@@ -39,11 +47,11 @@ def fetch_stock_data(ticker, period='1y'):
         with open(f'data/{ticker}_stock_data.json', 'w') as f:
             json.dump(data, f, indent=4)
 
-        print(f"Stock data for {ticker} has been saved to data/{ticker}_stock_data.json.")
+        logging.info(f"Stock data for {ticker} has been saved to data/{ticker}_stock_data.json.")
         return data
 
     except Exception as e:
-        print(f"An error occurred while fetching data for {ticker}: {e}")
+        logging.error(f"An error occurred while fetching data for {ticker}: {e}")
         return None
 
 if __name__ == '__main__':
