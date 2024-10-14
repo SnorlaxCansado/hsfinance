@@ -146,5 +146,5 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at: **Gabriel T. H. S. Santos**.
+For any questions or suggestions, feel free to contact me at: **gabrielthss@gmail.com**.
 
