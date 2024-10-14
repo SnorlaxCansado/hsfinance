@@ -140,10 +140,6 @@ All dependencies can be installed using `pip install -r requirements.txt`.
 - This project makes heavy use of OpenAI's GPT for generating complementary tickers, theme queries, and generating the final report.
 - SERPER and Jina AI are used to gather and process news articles related to the selected ticker.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
 ## Contact
 
 For any questions or suggestions, feel free to contact me at: **gabrielthss@gmail.com**.
